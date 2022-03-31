@@ -55,7 +55,7 @@ class DearDbaSqlGenerator : IMigrationsSqlGenerator
 
                 if (firstIndex)
                     builder
-                        .AppendLine("We don't really know what an index is, but in the past you've been able to use them to improve performance and compensate for some of our more incompetent queries. We will, of course, defer to your far superior expertise on this matter. Nevertheless, we will suggest a few that we're reasonable certain about.")
+                        .AppendLine("We don't really know what an index is, but in the past, you've been able to use them to improve performance and compensate for some of our more incompetent queries. We will, of course, defer to your far superior expertise on this matter. Nevertheless, we will suggest a few that we're reasonably certain about.")
                         .AppendLine();
 
                 builder.AppendLine($"We {(firstIndex ? "" : "also ")}think the {index.Columns[0]} column on the {index.Table} table should be indexed.");
